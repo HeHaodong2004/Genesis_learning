@@ -1,0 +1,8 @@
+inherit: [base.yaml]
+name: eval
+env:
+  n_envs: 16
+eval:
+  n_episodes: 32
+  policy: reactive
+  record_trajectories: true

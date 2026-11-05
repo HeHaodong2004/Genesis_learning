@@ -1,0 +1,4 @@
+# Ablation: no_randomization
+inherit: [../base.yaml]
+name: no_randomization
+env: {randomization: {robot_init: false, goal: false, obstacles: false, mover: false, dynamics: false, obs_noise: false}}

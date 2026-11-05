@@ -1,0 +1,4 @@
+# Ablation: no_mover
+inherit: [../base.yaml]
+name: no_mover
+env: {mover: {enabled: false}}

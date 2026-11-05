@@ -1,0 +1,22 @@
+{
+  "python.defaultInterpreterPath": "${env:HOME}/miniforge3/envs/genesis-research/bin/python",
+  "python.analysis.extraPaths": ["${workspaceFolder}/src"],
+  "python.analysis.typeCheckingMode": "basic",
+  "python.testing.pytestEnabled": false,
+  "python.testing.unittestEnabled": true,
+  "python.testing.unittestArgs": ["-v", "-s", "developer/tests", "-p", "test_*.py"],
+  "terminal.integrated.env.linux": {
+    "PYTHONPATH": null,
+    "AMENT_PREFIX_PATH": null,
+    "PYTHONNOUSERSITE": "1"
+  },
+  "files.watcherExclude": {
+    "**/results/**": true,
+    "**/runs/**": true,
+    "**/.git/objects/**": true
+  },
+  "search.exclude": {"results": true, "runs": true},
+  "editor.rulers": [100],
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true
+}

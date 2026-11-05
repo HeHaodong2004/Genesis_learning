@@ -1,0 +1,31 @@
+# Base experiment configuration. Every field is documented in src/gnav/config.py.
+name: base
+seed: 0
+eval_seed: 10000
+backend: gpu
+output_dir: runs
+env:
+  n_envs: 16
+  sim_dt: 0.02
+  control_decimation: 5
+  max_episode_steps: 300
+  terminate_on_collision: true
+  sensors:
+    depth_enabled: true
+    depth_res: [64, 16]
+    depth_hfov_deg: 90.0
+    rays_enabled: true
+    rays_n: 31
+    rays_fov_deg: 90.0
+    max_range: 6.0
+  dynamics:
+    profiles: [agile]
+  mover:
+    enabled: true
+  randomization:
+    robot_init: true
+    goal: true
+    obstacles: true
+    mover: true
+    dynamics: false
+    obs_noise: false

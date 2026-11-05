@@ -1,0 +1,4 @@
+# Ablation: depth_only
+inherit: [../base.yaml]
+name: depth_only
+env: {sensors: {rays_enabled: false}}

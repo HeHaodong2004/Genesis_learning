@@ -1,0 +1,7 @@
+# 合成教学 fixture；不是 Genesis 仿真实验结果。
+name: developer_fixture
+backend: cpu
+env:
+  n_envs: 2
+eval:
+  n_episodes: 2

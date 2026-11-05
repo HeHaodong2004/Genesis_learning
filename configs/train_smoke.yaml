@@ -1,0 +1,8 @@
+inherit: [base.yaml]
+name: train_smoke
+env:
+  n_envs: 32
+train:
+  iterations: 20
+  rollout_len: 32
+  checkpoint_every: 10

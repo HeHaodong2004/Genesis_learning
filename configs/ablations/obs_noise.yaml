@@ -1,0 +1,4 @@
+# Ablation: obs_noise
+inherit: [../base.yaml]
+name: obs_noise
+env: {randomization: {obs_noise: true}}

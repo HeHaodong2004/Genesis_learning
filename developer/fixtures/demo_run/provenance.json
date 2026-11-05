@@ -1,0 +1,7 @@
+{
+  "synthetic": true,
+  "python": "fixture-only",
+  "git_commit": "not-a-real-run",
+  "git_dirty": false,
+  "note": "合成教学数据，不能用于论文、性能评估或科学结论。"
+}

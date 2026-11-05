@@ -1,0 +1,6 @@
+# Cross-dynamics training distribution: both profiles, +-20% parameter scaling, +-1 step delay jitter.
+inherit: [../base.yaml]
+name: mixed_randomized
+env:
+  dynamics: {profiles: [agile, heavy], profile_probs: [0.5, 0.5]}
+  randomization: {dynamics: true}

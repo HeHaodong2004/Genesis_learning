@@ -1,0 +1,12 @@
+{
+  "status": "predictions written before execution; educational validation, not research preregistration",
+  "model": "A sphere in gravity with no contact, Euler integrator, no initial velocity",
+  "parameters": {"gravity_z": -9.81, "initial_z": 2.0, "duration_s": 0.2, "substeps": 1, "n_envs": 2},
+  "predictions": [
+    "Final vertical velocity is g*T within 2e-4 m/s at dt=0.02 and dt=0.01.",
+    "Semi-implicit Euler position is z0+g*dt^2*n*(n+1)/2 within 2e-4 m.",
+    "Absolute error against continuous freefall is approximately halved when dt is halved at fixed duration (ratio in [1.8,2.2]).",
+    "Resetting only env0 position and velocity leaves env1 state unchanged before the next step."
+  ],
+  "limitations": ["No contact, sensors, actuator, controller or learned policy is validated.", "No throughput claim: this deliberately tiny instrument performs host reads for diagnostics.", "A passed check only covers this scene, backend, installed version and finite precision."]
+}

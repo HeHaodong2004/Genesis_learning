@@ -1,0 +1,36 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Genesis: debug config (no simulation)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/developer/gnav_dev.py",
+      "args": ["config", "--config", "configs/eval.yaml", "backend=cpu", "env.n_envs=2"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src",
+        "AMENT_PREFIX_PATH": "",
+        "PYTHONNOUSERSITE": "1",
+        "CUDA_VISIBLE_DEVICES": ""
+      }
+    },
+    {
+      "name": "Genesis: debug doctor",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/developer/gnav_dev.py",
+      "args": ["doctor"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src",
+        "AMENT_PREFIX_PATH": "",
+        "PYTHONNOUSERSITE": "1",
+        "CUDA_VISIBLE_DEVICES": ""
+      }
+    }
+  ]
+}

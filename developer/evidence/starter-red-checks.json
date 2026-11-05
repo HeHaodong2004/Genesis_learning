@@ -1,0 +1,26 @@
+[
+  {
+    "lab": "paired_comparison",
+    "expected": "nonzero until learner fixes starter",
+    "exit_code": 1,
+    "expected_red": true
+  },
+  {
+    "lab": "observation",
+    "expected": "nonzero until learner fixes starter",
+    "exit_code": 1,
+    "expected_red": true
+  },
+  {
+    "lab": "gae",
+    "expected": "nonzero until learner fixes starter",
+    "exit_code": 1,
+    "expected_red": true
+  },
+  {
+    "lab": "identification",
+    "expected": "nonzero until learner fixes starter",
+    "exit_code": 1,
+    "expected_red": true
+  }
+]

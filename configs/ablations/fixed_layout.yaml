@@ -1,0 +1,4 @@
+# Ablation: fixed_layout
+inherit: [../base.yaml]
+name: fixed_layout
+env: {randomization: {obstacles: false, mover: false}}

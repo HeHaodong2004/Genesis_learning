@@ -1,0 +1,16 @@
+{
+  "description": "Synthetic teaching data only; not a Genesis experiment or scientific result.",
+  "keys": ["success", "collided", "length"],
+  "a": [
+    {"env_id": 0, "episode_idx": 0, "success": 0, "collided": 1, "length": 10},
+    {"env_id": 0, "episode_idx": 1, "success": 1, "collided": 0, "length": 20},
+    {"env_id": 1, "episode_idx": 0, "success": 0, "collided": 0, "length": null},
+    {"env_id": 9, "episode_idx": 0, "success": 1, "collided": 0, "length": 12}
+  ],
+  "b": [
+    {"env_id": 1, "episode_idx": 0, "success": 1, "collided": 0, "length": 7},
+    {"env_id": 0, "episode_idx": 0, "success": 1, "collided": 0, "length": 8},
+    {"env_id": 0, "episode_idx": 1, "success": 1, "collided": 0, "length": 16},
+    {"env_id": 8, "episode_idx": 0, "success": 1, "collided": 0, "length": 15}
+  ]
+}

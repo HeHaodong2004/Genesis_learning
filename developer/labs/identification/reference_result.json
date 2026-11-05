@@ -1,0 +1,126 @@
+{
+  "synthetic": true,
+  "purpose": "教学：输入设计与有限数据可辨识；不是新科研成果或自我意识证据",
+  "implementation": "solution",
+  "controls": {
+    "true_a": 0.75,
+    "true_b": 0.5,
+    "horizon": 128,
+    "train_initial_state": 2.0,
+    "input_energy_each": 128.0,
+    "input_max_abs_each": 1.0,
+    "rich_train_input_seed": 2026,
+    "train_process_seed": 101,
+    "train_measurement_seed": 102,
+    "holdout_input_seed": 2027,
+    "holdout_process_seed": 201,
+    "holdout_measurement_seed": 202,
+    "holdout_initial_state": -0.3,
+    "noise_note": "同一噪声级别内两个训练组复用相同噪声draws；holdout独立于训练且两组共享。",
+    "measurement_noise_std": 0.0,
+    "rank_note": "rank来自本次有限设计矩阵的数值阈值；不等于所有实验下的结构可辨识性。"
+  },
+  "comparisons": [
+    {
+      "process_noise_std": 0.0,
+      "fits": {
+        "constant": {
+          "n_samples": 128,
+          "rank": 1,
+          "rank_tolerance": 1e-12,
+          "condition_x": null,
+          "identifiable": false,
+          "a": null,
+          "b": null,
+          "train_one_step_mse": null,
+          "parameter_l2_error": null,
+          "holdout": null,
+          "reason": "按声明数值阈值不输出唯一稳定估计；condition_x=null表示数值秩不足或未定义，不等于证明精确矩阵无唯一解。"
+        },
+        "rich": {
+          "n_samples": 128,
+          "rank": 2,
+          "rank_tolerance": 1e-12,
+          "condition_x": 1.1657524482117259,
+          "identifiable": true,
+          "a": 0.7499999999999999,
+          "b": 0.49999999999999994,
+          "train_one_step_mse": 1.7935222607106134e-32,
+          "parameter_l2_error": 1.2412670766236366e-16,
+          "holdout": {
+            "one_step_observed_mse": 1.343336136210097e-32,
+            "rollout_observed_mse": 1.1334097722718883e-31,
+            "rollout_latent_mse": 1.1334097722718883e-31
+          }
+        }
+      }
+    },
+    {
+      "process_noise_std": 0.03,
+      "fits": {
+        "constant": {
+          "n_samples": 128,
+          "rank": 2,
+          "rank_tolerance": 1e-12,
+          "condition_x": 105.90049833570438,
+          "identifiable": true,
+          "a": 0.8021029033788621,
+          "b": 0.39891341325713586,
+          "train_one_step_mse": 0.0008562640878978661,
+          "parameter_l2_error": 0.113724274276997,
+          "holdout": {
+            "one_step_observed_mse": 0.012147593749713881,
+            "rollout_observed_mse": 0.015577014691428684,
+            "rollout_latent_mse": 0.015577014691428684
+          }
+        },
+        "rich": {
+          "n_samples": 128,
+          "rank": 2,
+          "rank_tolerance": 1e-12,
+          "condition_x": 1.155252321506893,
+          "identifiable": true,
+          "a": 0.755483617220917,
+          "b": 0.4990393528897643,
+          "train_one_step_mse": 0.0008545643023793787,
+          "parameter_l2_error": 0.005567126790000484,
+          "holdout": {
+            "one_step_observed_mse": 0.000870370621978231,
+            "rollout_observed_mse": 0.001959455003349173,
+            "rollout_latent_mse": 0.001959455003349173
+          }
+        }
+      }
+    }
+  ],
+  "nonidentifiability_witness": [
+    {
+      "candidate_a": 0.75,
+      "candidate_b": 0.5,
+      "train": {
+        "one_step_observed_mse": 0.0,
+        "rollout_observed_mse": 0.0,
+        "rollout_latent_mse": 0.0
+      },
+      "holdout": {
+        "one_step_observed_mse": 0.0,
+        "rollout_observed_mse": 0.0,
+        "rollout_latent_mse": 0.0
+      }
+    },
+    {
+      "candidate_a": 0.5,
+      "candidate_b": 1.0,
+      "train": {
+        "one_step_observed_mse": 0.0,
+        "rollout_observed_mse": 0.0,
+        "rollout_latent_mse": 0.0
+      },
+      "holdout": {
+        "one_step_observed_mse": 0.28992113753126847,
+        "rollout_observed_mse": 0.28313601915976394,
+        "rollout_latent_mse": 0.28313601915976394
+      }
+    }
+  ]
+}

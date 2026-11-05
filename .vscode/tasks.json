@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Genesis: doctor",
+      "type": "process",
+      "command": "make",
+      "args": ["doctor"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    },
+    {
+      "label": "Genesis: check (no simulation)",
+      "type": "process",
+      "command": "make",
+      "args": ["check"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "group": {"kind": "test", "isDefault": true},
+      "problemMatcher": []
+    },
+    {
+      "label": "Genesis: config preview",
+      "type": "process",
+      "command": "make",
+      "args": ["config"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    }
+  ]
+}
