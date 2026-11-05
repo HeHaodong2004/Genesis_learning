@@ -10,6 +10,11 @@
     "sha256": "91169e3875ee8a32731a462b1672d6db3a3d9a00201485150a1810ed28c573c2"
   },
   {
+    "path": ".github/workflows/website-check.yml",
+    "bytes": 1033,
+    "sha256": "38beed5167f12b8f28a4ced55858dec4e2f400cb8e86b0f59bf011abbe00398b"
+  },
+  {
     "path": ".gitignore",
     "bytes": 94,
     "sha256": "3b2f5233549c9da1759d076af7ac8a189c18ffcbdaefd23793cc76edd0466b04"
@@ -41,13 +46,13 @@
   },
   {
     "path": "README.md",
-    "bytes": 5701,
-    "sha256": "142b5c627b22c77e79f1d92b80b83615c3aa6d34c396f25563eb4ce5772f0db0"
+    "bytes": 6748,
+    "sha256": "ad1a2b2f2beae0f9017ace0ae4f95ce785201ee00f8a2cbb7a652e7def0bdde1"
   },
   {
     "path": "START_HERE.md",
-    "bytes": 5238,
-    "sha256": "d08b178a11b7cb877a911aa5081207518e21562200a595195340e6f4025aecf0"
+    "bytes": 5462,
+    "sha256": "8eb76d27a0011159caf6dcc0d6ffbed52cdf375cc4f79654b2ab2b549b99e04e"
   },
   {
     "path": "configs/ablations/depth_only.yaml",
@@ -558,5 +563,40 @@
     "path": "tests/conftest.py",
     "bytes": 927,
     "sha256": "eefafb21fe130c88929cccf135346d8d5c684bf489733177b12f9f3deec0a277"
+  },
+  {
+    "path": "website/QA.md",
+    "bytes": 1018,
+    "sha256": "32ac5d162d040c4b8517aa1286e54e641d5b58f0260b9680c6d34db220dda988"
+  },
+  {
+    "path": "website/README.md",
+    "bytes": 731,
+    "sha256": "404a7fd2a641c639b56d2abf803b348ffc890e2b40084fb90e1e599fbe6928fc"
+  },
+  {
+    "path": "website/check.cjs",
+    "bytes": 1389,
+    "sha256": "5130efa702ff2a035e062c2f11aaf3078c09133f9cfde4f797a407d46575e295"
+  },
+  {
+    "path": "website/dist/app.js",
+    "bytes": 21988,
+    "sha256": "2181934bd3090357250d1399c9c39f49d108535e4a506359441c34c0b1f0f464"
+  },
+  {
+    "path": "website/dist/course-data.js",
+    "bytes": 145106,
+    "sha256": "5c9d3e135b21de3d45b0d6c0a8e6f811e691e2f9b200dfa5ebb91876f4a1e238"
+  },
+  {
+    "path": "website/dist/index.html",
+    "bytes": 1627,
+    "sha256": "36afd26a1359a9b86b93d47431f9537ea4af67d742e9e88dbc5230551bd0533e"
+  },
+  {
+    "path": "website/dist/styles.css",
+    "bytes": 16600,
+    "sha256": "5ac2cfe01ae27723006bbfc6e8f4fe1cf6c18ec2cf3931d47d42a5533a183e39"
   }
 ]

@@ -1,5 +1,7 @@
 # Genesis 现代机器人研究者训练包
 
+**喜欢网页跟练：** 打开 [Genesis 研究者工坊](https://genesis-robotics-learning.hehaodong2004.chatgpt.site)，从第 1 章开始。网站源码及本地运行方式见 [website/README.md](website/README.md)。
+
 **从这里开始。** 这是围绕现有 Genesis 研究代码制作的中文开发工作台和主动练习包。它保留你的数学与规划基础，补上现代开发、仿真验证、学习算法实现与实验交付。无需重新安装 Genesis，也不需要持续订阅 AI 才能运行这些本地文件。
 
 ## 从 GitHub 下载后开始

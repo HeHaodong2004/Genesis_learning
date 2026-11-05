@@ -1,0 +1,33 @@
+name: Website check
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  course:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check website/dist/app.js
+      - run: node --check website/dist/course-data.js
+      - run: node website/check.cjs
+      - name: Check embedded source matches this repository
+        run: |
+          node <<'JS'
+          const fs = require('node:fs');
+          const vm = require('node:vm');
+          const assert = require('node:assert/strict');
+          const context = {window: {}};
+          vm.runInNewContext(fs.readFileSync('website/dist/course-data.js', 'utf8'), context);
+          for (const [path, content] of Object.entries(context.window.COURSE_DATA.files)) {
+            assert.equal(content, fs.readFileSync(path, 'utf8'), `Stale embedded source: ${path}`);
+          }
+          console.log('Embedded source matches repository.');
+          JS
